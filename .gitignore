@@ -1,1 +1,7 @@
 /**/*.exe
+/**/*.dll
+/**/build
+/**/dist
+
+/**/*egg-info
+

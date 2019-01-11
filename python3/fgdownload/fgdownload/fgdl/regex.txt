@@ -1,0 +1,13 @@
+GET_TABLE:(<table [^>]* class="forum_header_border">[\s\S]*<\/table>)
+
+GET_COLS:<tr [^>]*>\s*<td [^>]*>.*</td>\s*(<td [^>]*>[\s\S]*?</td>)\s*(<td [^>]*>[\s\S]*?</td>)\s*(<td [^>]*>[\s\S]*?</td>)\s*(<td [^>]*>[\s\S]*?</td>)\s*(<td [^>]*>[\s\S]*?</td>)[\s\S]*?</tr>
+
+COL_1_INFO:<td [^>]*>[\s\S]*<a [^>]*>(.*) (?:(?:S|s)(\d\d)(?:E|e)(\d\d))(?:.*?(\d\d\dp))?.*</a>
+
+COL_2_INFO:href=\"(.*?\.torrent)\"
+
+COL_3_INFO:>(\d+\.?\d* (?:M|G)B)<
+
+COL_4_INFO:>(.*)<
+
+COL_5_INFO:<font .*?>(.*)</font>
